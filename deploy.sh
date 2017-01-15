@@ -2,7 +2,6 @@
 
 set -o errexit
 
-theme=$1
 if [ -z "$theme" ]; then
     theme="stackoverflow" # This will be the default theme if no theme is specified.
 fi
