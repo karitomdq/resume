@@ -1,0 +1,22 @@
+dist: trusty
+language: generic
+sudo: required
+before_script:
+  - sudo apt-get purge nodejs npm
+  - curl -sL https://deb.nodesource.com/setup_6.x | sudo bash -
+  - sudo apt-get install -y nodejs
+  - sudo npm install -g resume-cli
+script:
+  - bash ./deploy.sh
+env:
+  global:
+  # TODO: Update `secure`. Update GH_REF.
+  # - Create a `public_repo` GitHub token. Go to: https://github.com/settings/tokens/new
+  # - Encrypt it: `travis encrypt YOUR_TOKEN`
+  #   - This can by done by installing ruby and running 'gem install travis'.
+  #   - Alternatively, you can go to: https://travis-encrypt.github.io
+  #     and enter your-github-name/your-repo and GH_TOKEN=your-public-key
+  # - Paste the output down here, replacing the text after 'secure: '
+  #   (the long line under 'encrypted data' if you used the website for encryption).
+  - GH_REF: github.com/your-github-name/your-repo-name.git
+  - secure: huAZJ9vVQjP58/eT3kmBK13EKmHhNsmnYR2g2g1BYlf3yY82uOQACK/L+gbyYtXVEGY1OyZ4xaVEuajEjPHZnrWjiuin3ZaoyyFC0OQ7RunEi71MS6h9sCyGa4lXhQeeXKFW8Ef2dPoJH9v+xV0tyOK4Y9BMcSew1Ydr0ThHdIC6xzQPISjfla2t0pNsadw7L5x2p65lwDt00HNjSvGec+C9sytjLz1N7GeEpT0prVC38rsRhc9HZEnHy1hXanjfS+UKjLCHd9E9843N9DorSnZCA6SKXe3UMKXxWLwR8/ow9ar23mtsYINNL59xDqBHFyUzq529QLMDUPekjeNJeLWBY3z2p3V2v1u4w/khuebSLSY/nsdeFEHhioP2KCJO19PiNxvXAefjuu0eCkgcx+C7IJyMf4YST3ixsfo/YtWocy/84N+/jX3rLAtiiUsxxy3Feg99VkGJuIKlXh1GmXEmsadwlzOcLdqDojPOiAqmKlACIGE555Jgvb5pauyUanHquJ0VrJmHNWOhQgJyge7WW55h7Ex/FmXZO1uSwkkTd3JIB9KtJnSLa1x/iWbyBoPbtViXf/6SX23n27Rctol/aUcwPpc67CO2Lmk+ow8sd+s7qEHbCIqGu5XU7n9G3uWvYcsNObcvtYzrqWjnNsoGFms6My65Z0cN4ppbA3o=
