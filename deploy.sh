@@ -2,10 +2,6 @@
 
 set -o errexit
 
-if [ -z "$theme" ]; then
-    theme="stackoverflow" # This will be the default theme if no theme is specified.
-fi
-
 # Sanity check: No pull requests and ensure we're on the master branch
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     echo "Won't attempt to build on pull requests. Exiting."
@@ -17,13 +13,16 @@ if [ "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
-# Generate the resume as index.html
-sudo npm install -g jsonresume-theme-${theme}
-resume export index --format html --theme ${theme}
+sudo npm install
+# Generate the resume as pdf, png and yml
+npm run generate-pdf
+# Generate the resume as html
+npm run generate-site
 
 rm -rf out
 mkdir out
 cd out
+cp ../resume.* .
 cp ../index.html .
 
 # Deploy
@@ -31,7 +30,7 @@ git config --global user.name "Travis-CI"
 git config --global user.email "travis-ci@travis-ci.org"
 
 git init
-git add index.html
+git add .
 git commit -m "Deployed resume to github pages branch through travis-ci."
 git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 
