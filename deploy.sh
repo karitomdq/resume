@@ -21,12 +21,6 @@ fi
 sudo npm install -g jsonresume-theme-${theme}
 resume export index --format html --theme ${theme}
 
-# Copy output file and check for changes
-if [ -z "$(git status --porcelain)" ]; then
-    echo "No changes to resume. Skipping deployment..."
-    exit 0
-fi
-
 rm -rf out
 mkdir out
 cd out
