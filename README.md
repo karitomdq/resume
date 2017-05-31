@@ -1,6 +1,6 @@
 ## Carolina's Resume [![Build Status](https://travis-ci.org/karitomdq/resume.svg?branch=master)](https://travis-ci.org/your-github-name/this-repo-name)
 
-You can view your resume at: karitomdq.github.io/resume
+You can view your resume at: https://karitomdq.github.io/resume
 
 You can create and edit your resume.json file at:  http://registry.jsonresume.org/
 
