@@ -1,0 +1,115 @@
+{
+  "basics": {
+    "name": "Carolina Campisteguy",
+    "label": "Project Manager",
+    "picture": "http://0.gravatar.com/avatar/0ffe15c29277dcf2272c9fc7111ca9b9",
+    "email": "krolina.mdq@gmail.com",
+    "phone": "(223) 155-689929",
+    "website": "",
+    "summary": "",
+    "location": {
+      "address": "Fugl 545",
+      "postalCode": "",
+      "city": "Tandil",
+      "countryCode": "ARG",
+      "region": "Buenos Aires"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "@karito_C",
+        "url": "https://twitter.com/Karito_C"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Carolina Campisteguy",
+        "url": "https://www.linkedin.com/in/carolina-campisteguy-8451601a/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Relayer.io",
+      "position": "Project Manager",
+      "website": "http://relayer.io/",
+      "startDate": "2016-12-01",
+      "endDate": "2017-05-31",
+      "summary": "Project Management of all the Projects that the Company has.",
+      "highlights": [
+        "Document Templates ",
+        "Project follow up",
+        "Participate in processes definition.",
+        "Jira / Confluence",
+        "Coach junior PMs."
+      ]
+    },
+    {
+      "company": "Q4Tech",
+      "position": "Customer Manager / Project Manager",
+      "website": "http://q4tech.com/",
+      "startDate": "2011-06-01",
+      "endDate": "2016-12-01",
+      "summary": "Daily customer support, mainly on Mobile Applications in different technologies, but also using some Web Apps. Besides this, I have been involved in projects from scratch which requiered tasks definition, creation of related documentation, planning & tasks follow up. As a Project Manager, I have been involved in key Projects for companies such as Danone, Bonafont and La Serenisima, between others.",
+      "highlights": [
+        "Customer support",
+        "Project follow up",
+        "Basic SQL",
+        "Team Foundation",
+        "MS Project"
+      ]
+    },
+    {
+      "company": "Q4Tech",
+      "position": "Documentary",
+      "website": "http://q4tech.com/",
+      "startDate": "2010-04-01",
+      "endDate": "2011-11-01",
+      "summary": "Development of documentation which describes Applications functional usage.",
+      "highlights": [
+        "User guides",
+        "Apps User Manual",
+        "Apps functional docs"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "UTN e-Learning",
+      "area": "Project Manager Expert",
+      "studyType": "Intensive Course",
+      "startDate": "2017-03-28",
+      "endDate": "2017-06-18",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Project Management",
+      "level": "Senior",
+      "keywords": [
+        "Communication",
+        "Leadership",
+        "Team Management",
+        "Negotiation",
+        "Customer Support",
+        "MS Project"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
